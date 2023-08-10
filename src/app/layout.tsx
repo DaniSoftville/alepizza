@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/footer";
 
-import Notification from "@/components/notification";
+import Notification from "@/components/Notification";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -21,8 +21,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar />
         <Notification />
+        <Navbar />
         {children}
         <Footer />
       </body>
